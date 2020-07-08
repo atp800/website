@@ -1,20 +1,20 @@
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Pages</title>
     </head>
     <body>
         <div>
             <h1><a href="/">Page Title</a></h1>
         </div>
 
-        <div>
-           {{ posts }}
-        </div>
+        {% for post in posts %}      
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Post Title 2</a></h2>
-            <p>Post contents</p>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
+
+        {% endfor %}
     </body>
 </html>
