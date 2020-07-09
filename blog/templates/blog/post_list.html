@@ -1,24 +1,13 @@
-{% load static %}
+{% extends 'blog/base.html' %}
 
-<html>
-    <head>
-        <title>Pages</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Page Title</a></h1>
-        </div>
-
-        {% for post in posts %}    
-            <div>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">                       
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <div class="date">
                 <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
             </div>
-        {% endfor %}
-        
-    </body>
-</html>
+        </div>
+    {% endfor %}
+{% endblock %}
