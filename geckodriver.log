@@ -50,3 +50,43 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1595803895821	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\apana\\AppData\\Local\\Temp\\rust_mozprofilecJIomG"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595803900784	Marionette	INFO	Listening on port 53764
+1595803901098	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595804114794	Marionette	INFO	Stopped listening on port 53764
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\apana\\AppData\\Local\\Temp\\rust_mozprofileuk2Gid"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595803951763	Marionette	INFO	Listening on port 53839
+1595803951838	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595803991249	Marionette	INFO	Stopped listening on port 53839
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595803991494	Marionette	INFO	Listening on port 53895
+1595803991753	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595804003928	Marionette	INFO	Stopped listening on port 53895
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1595804130048	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\apana\\AppData\\Local\\Temp\\rust_mozprofileEb1CG3"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595804134626	Marionette	INFO	Listening on port 53958
+1595804134794	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595804153068	Marionette	INFO	Stopped listening on port 53958
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
