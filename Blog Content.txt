@@ -1,0 +1,26 @@
+Year 2 on LANS
+Modules I've studied this year:
+
+Utopia/Dystopia (English Lit)
+Mathematical Modelling and Decision Making (Comp Sci)
+Systems Programming in C/C++ (Comp Sci)
+Team Project AI (Comp Sci)
+The Mind Body Problem (Phil)
+Interdisciplinarity I (LANS)
+Interdisciplinarity II (LANS)
+
+The Mind Body Problem was probably my favourite, due to how thought provoking it was, and how it led me into further reading in a way less interesting modules haven't. Utopia/Dystopia also did to a similar extent, although the module content itself was less intellectually engaging.
+
+I wasn't a huge fan of Systems Programming, and found it quite tedious fro most of the duration, partly due to needing to load up a virtual box for the majority of the work, although as I became more comfortable with the module content I began to warm to it.
+Overall, I preferred Mathematical Modelling as a CS module. It was more relevant to my interest in AI, and I liked the more mathematical elements: I find I generally prefer this more abstract and mathematical side of computer science, compared to things like web design and app development. I also preferred the report writing to the smaller, but regular assignments, with it feeling more reflective of the research I'd like to go into, and less a constant battle with minor bugs that soak up my time.
+
+
+What I Look Forward to Next Year
+No Idea. I was meant to be going on a year abroad, and being on LANS I have to: it's integrated into my course. But there's been so much uncertainty and so many options bouncing around (applying for placements, year in the military, condensed year at Melbourne, deferring the year, going to Lund University, going to Korea University, getting a job in Birmignham, doing half the year abroad online...) that I have no idea what I'm doing.
+
+
+This Site
+This website is arranged partly in a hierarchical structure, with a base HTML file acting as a foundation for other HTML fields, representing various views (a list of posts, and individual posts) These the act as containers for any post created.
+Meanwhile, the posts themselves are objects that exist as instances of a model, Post, and are stored in an SQLite database. As a query set, these posts can be filtered and sorted in various ways to be displayed, such as in the post list view.
+
+Buttons for adding and editing posts have been added to avlid the need to use the admin panel, and increase convenience. These then have authentication checks to ensure the user is an admin, and otherwise arent displayed.
