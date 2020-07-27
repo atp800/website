@@ -1,6 +1,7 @@
 from django.urls import resolve
 from django.test import TestCase
 from django.http import HttpRequest
+from django.template.loader import render_to_string
 
 from blog.views import post_list
 from blog.views import post_detail
@@ -15,12 +16,12 @@ class PostListTest(TestCase):
         self.assertEqual(found.func, post_list) 
 
     def test_post_list_returns_correct_html(self):
-        request = HttpRequest()  
-        response = post_list(request)  
+        response = self.client.get('/')
         html = response.content.decode('utf8')  
-        #self.assertTrue(html.startswith('<html>'))  
+        self.assertTrue(html.strip().startswith('<html>'))  
         self.assertIn('<title>2nd Year Blog</title>', html)  
-        self.assertTrue(html.endswith('</html>')) 
+        self.assertTrue(html.endswith('</html>'))
+        self.assertTemplateUsed(response, 'blog/post_list.html')         
 
 
 
@@ -28,7 +29,7 @@ class PostDetailTest(TestCase):
 
     def test_root_url_resolves_to_post_detail_view(self):
         found = resolve('/post/14/')  
-        self.assertEqual(found.func, post_detail) 
+        self.assertEqual(found.func, post_detail)
         
 
 class PostEditTest(TestCase):
