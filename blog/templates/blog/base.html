@@ -13,6 +13,7 @@
         <div class="page-header">
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'cv_display' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>                
             {% endif %}
             <h1><a href="/">2nd Year Blog</a></h1>
         </div>

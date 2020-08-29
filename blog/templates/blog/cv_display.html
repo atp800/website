@@ -1,0 +1,41 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>CV</h2>
+    {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'cv_edit' %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    {% endif %}
+    {% if post.name %}
+        <p>{{ post.name|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.email %}
+        <p>{{ post.email|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.mobile %}
+        <p>{{ post.mobile|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.linkedin %}
+        <p>{{ post.linkedin|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.bio %}
+        <p>{{ post.bio|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.employment %}
+        <p>{{ post.employment|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.qualifications %}
+        <p>{{ post.qualifications|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.experience %}
+        <p>{{ post.experience|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.achievements %}
+        <p>{{ post.achievements|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.education %}
+        <p>{{ post.education|linebreaksbr }}</p>
+    {% endif %}
+    {% if post.references %}
+        <p>{{ post.references|linebreaksbr }}</p>
+        {% endif %}
+{% endblock %}

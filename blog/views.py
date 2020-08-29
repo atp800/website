@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
+from .forms import CVForm
 from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 
@@ -42,3 +43,21 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+def cv_edit(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('cv_display', pk=post.pk)
+    else:
+        form = CVForm()
+    return render(request, 'blog/cv_edit.html', {'form': form})
+
+
+def cv_display(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/cv_display.html', {'posts': posts})

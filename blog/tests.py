@@ -7,6 +7,8 @@ from blog.views import post_list
 from blog.views import post_detail
 from blog.views import post_edit
 from blog.views import post_new
+from blog.views import cv_edit
+from blog.views import cv_display
 
 
 class PostListTest(TestCase):
@@ -44,3 +46,17 @@ class PostNewTest(TestCase):
     def test_root_url_resolves_to_post_new_view(self):
         found = resolve('/post/new/')  
         self.assertEqual(found.func, post_new)  
+
+
+class CVDisplayTest(TestCase):
+
+    def test_root_url_resolves_to_cv_display_view(self):
+        found = resolve('/cv/')  
+        self.assertEqual(found.func, cv_display)
+
+
+class CVEditTest(TestCase):
+
+    def test_root_url_resolves_to_cv_edit_view(self):
+        found = resolve('/cv/edit/')  
+        self.assertEqual(found.func, cv_edit)
