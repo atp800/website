@@ -29,7 +29,7 @@ class CV(models.Model):
     employment = models.TextField()
     qualifications = models.TextField()
     experience = models.TextField()
-    achievments = models.TextField()
+    achievements = models.TextField()
     education = models.TextField()
     references = models.TextField()
 

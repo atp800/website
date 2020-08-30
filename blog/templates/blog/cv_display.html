@@ -7,35 +7,114 @@
     {% endif %}
     {% if post.name %}
         <p>{{ post.name|linebreaksbr }}</p>
+    {% else %}
+        <p>Andreas Panayiotou</p>
     {% endif %}
     {% if post.email %}
         <p>{{ post.email|linebreaksbr }}</p>
+    {% else %}
+        <p>a.panayiotou17@hotmail.com</p>
     {% endif %}
     {% if post.mobile %}
         <p>{{ post.mobile|linebreaksbr }}</p>
+    {% else %}
+        <p>07834388625</p>
     {% endif %}
     {% if post.linkedin %}
         <p>{{ post.linkedin|linebreaksbr }}</p>
+    {% else %}
+        <p>https://www.linkedin.com/in/andreas-panayiotou-63370317b/</p>
     {% endif %}
     {% if post.bio %}
         <p>{{ post.bio|linebreaksbr }}</p>
+    {% else %}        
+        <p>I’m a 2nd year undergraduate majoring in computer science and neuroscience, with excellent maths, literacy and
+            IT skills. I achieved first in my 1st and 2nd years at uni, and enjoy working both alone and in a team. Studying
+            modules across a range of subjects, I’m accustomed to quickly picking up new ideas and skills, and love variety.<br></p>
     {% endif %}
     {% if post.employment %}
         <p>{{ post.employment|linebreaksbr }}</p>
+    {% else %}
+        <h3>Employment</h3>
+        <p>November 2016-April 2017: Garden Centre Assistant - Wyevale Garden Centre, Windlesham
+        <br>June 2018-Present: Bartender and Waiter - The Half Moon, Windlesham<br></p>
     {% endif %}
     {% if post.qualifications %}
         <p>{{ post.qualifications|linebreaksbr }}</p>
+    {% else %}
+        <h3>Qualifications</h3>
+        <p>English Literature A-level - A
+        <br>Mathematics A-level - A
+        <br>Further Mathematics A-level - C
+        <br>Computer Science A-level - B
+        <br>Proficient in Java and Git
+        <br>Currently learning C and Python
+        <br>12 GCSEs A-A*
+        <br>Additional Maths FSMQ - B<br>
+            </p>
     {% endif %}
     {% if post.experience %}
         <p>{{ post.experience|linebreaksbr }}</p>
+    {% else %}
+        <h3>Experience</h3>
+        <p>• Assisting with electronics for bespoke
+            luxury yachts during work experience at
+            Sunseeker International
+        <br>• Volunteering with senior men and women
+            to advance their ICT skills
+        <br>• Activity organising for local Beaver Scouts
+        <br>• Handling money in customer facing roles
+        <br>• Writing and publishing articles related to
+            technology, media, philosophy and politics
+        <br>• Providing commentary for sports event
+        <br>• Working in a team over 3 months to
+            develop a game using Java and GitLab
+        <br>• Several experiences of delivering
+            professional and engaging pitches
+        <br>• Participating in a quantum computing
+            hackathon
+        <br>• Project manager of Birmingham team
+            during Cisco University Challenge 2019<br>
+            </p>
     {% endif %}
     {% if post.achievements %}
         <p>{{ post.achievements|linebreaksbr }}</p>
+    {% else %}
+        <h3>Achievements and Interests</h3>
+        <p>• Led a team of five in a research project,
+            for which my team was not only awarded
+            a first, but the highest mark on our course
+        <br>• Awarded 83% for a 3 month Java group
+            project, involving basic AI (Bayesian)
+        <br>• Completed Gold Duke of Edinburgh Award
+        <br>• Play for Birmingham Men’s 1s lacrosse
+            team, recently winning our league
+        <br>• Hobbies include playing guitar, song
+            writing, MMA and yoga
+        <br>• Avid reader and film lover
+        <br>• Favourite editor is VS Code</p>
     {% endif %}
     {% if post.education %}
         <p>{{ post.education|linebreaksbr }}</p>
+    {% else %}
+        <h3>Education</h3>
+        <p>-2nd year Liberal Arts and Sciences BSc, University of Birmingham
+        <br>-Double majoring in computer science and neuroscience, with a particular interest in AI<br>
+        <br>2010-2015: Collingwood College - Kingston Road Camberley, Surrey GU15 4AE
+        <br>2015-2017: The Sixth Form College Farnborough - Prospect Avenue, Farnborough, GU14 8JX
+        <br>2018-Present: University of Birmingham - Edgbaston, Birmingham, B15 2TT
+            </p>
     {% endif %}
     {% if post.references %}
         <p>{{ post.references|linebreaksbr }}</p>
-        {% endif %}
+    {% else %}
+        <h3>References</h3>
+        <p>Dr. Ilija Rašović
+        <br>Personal tutor and material sciences lecturer
+        <br>ERI Building, University of Birmingham, B15 2TT
+        <br>i.rasovic@bham.ac.uk<br>
+        <br>Helga and Conrad Sturt
+        <br>Managers of The Half Moon
+        <br>Half Moon, Church Road, Windlesham, G</p>
+    {% endif %}
 {% endblock %}

@@ -11,4 +11,4 @@ class PostForm(forms.ModelForm):
 class CVForm(forms.ModelForm):
     class Meta:
         model = CV
-        fields = ('name', 'address', 'email', 'mobile', 'linkedin', 'bio', 'employment', 'qualifications', 'experience', 'achievments', 'education', 'references')
+        fields = ('name', 'address', 'email', 'mobile', 'linkedin', 'bio', 'employment', 'qualifications', 'experience', 'achievements', 'education', 'references')
